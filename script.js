@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Загрузка GLTF-модели
     const loader = new THREE.GLTFLoader();
-    loader.load("model.glb", (gltf) => {
+    loader.load("https://github.com/maksimzm29/AR-Marker-App/model.glb"model.glb", (gltf) => {
         const model = gltf.scene;
         model.scale.set(1, 1, 1); // Масштаб модели
         model.position.set(0, 0, 0); // Центрируем на маркере
